@@ -1,0 +1,70 @@
+//
+//  listWithButton.swift
+//  
+//
+//  Created by Ritik Karma on 22/04/24.
+//
+
+import SwiftUI
+
+struct listWithButton: View {
+    @State var num: [Int] = []
+    @State var nextNum = 1
+    @State var showModule = false
+    func removeRow(offsets: IndexSet){
+        num.remove(atOffsets: offsets)
+    }
+    func addNum(){
+        if (num.count < 10){
+            num.append(nextNum)
+            nextNum += 1
+        }
+    }
+    var body: some View {
+        NavigationStack{ ///Required to add button in toolbar
+            List{
+                ForEach(num, id: \.self){
+                    Text("Row number: \($0)")
+                        .onTapGesture {
+                            showModule = true
+                        }
+                }
+                .onDelete(perform: { indexSet in
+                    
+                   // num.remove(atOffsets: indexSet)
+                    ///OR
+                    removeRow(offsets: indexSet)
+                    
+                    ///Now u can delete any row with UI by sliding or editing
+                })
+                .sheet(isPresented: $showModule){
+                    Text("jlksfj;laksjf")
+                }
+            }
+            .toolbar{
+                if (num.count < 10) {
+                    Button("Add Number"){
+                        
+                        //                num.append(nextNum)
+                        //                nextNum += 1
+                        ///OR
+                        addNum()
+                    }
+                }
+            }
+            
+            .toolbar{
+                if (num.count != 0){
+                    EditButton()
+                }
+            }
+            ///Can place toolbar button at any place left or bottom and default is on right top side
+            .navigationTitle("Numbers")
+            
+        }
+    }
+}
+
+#Preview {
+    listWithButton()
+}
