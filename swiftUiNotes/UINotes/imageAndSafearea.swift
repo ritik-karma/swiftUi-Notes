@@ -18,6 +18,7 @@ struct safeArea: View {
                         .background(.red)
                 }
             Image(systemName: "house")
+               
                 .foregroundColor(.white)
                 .font(.system(size: 90))
         }
@@ -49,7 +50,7 @@ struct imageAndSafearea: View {
                         .clipShape(.circle) //or
                     //   .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         .overlay {
-                            Circle().stroke(.gray, lineWidth: 4)
+                            Circle().stroke(.green, lineWidth: 4)
                         }
                         .shadow(radius: 7)
                     Image(systemName: "xmark.circle")

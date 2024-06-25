@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct list: View {
+    
     var samples = ["meal",
                    "vegBowl",
                    "pastry",
@@ -84,9 +85,14 @@ struct list: View {
             
             
         }
+        
+        
+        
+        
+        }
     }
     ///* also can loop with list only without using loop but its not prefered it has some problems
-}
+
 
 
 

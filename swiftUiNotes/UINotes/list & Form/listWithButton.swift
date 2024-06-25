@@ -29,6 +29,7 @@ struct listWithButton: View {
                             showModule = true
                         }
                 }
+                
                 .onDelete(perform: { indexSet in
                     
                    // num.remove(atOffsets: indexSet)
