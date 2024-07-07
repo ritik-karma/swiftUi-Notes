@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct listWithButton: View {
+    
+    
     @State var num: [Int] = []
     @State var nextNum = 1
     @State var showModule = false
+
+    
     func removeRow(offsets: IndexSet){
         num.remove(atOffsets: offsets)
     }
@@ -20,6 +24,9 @@ struct listWithButton: View {
             nextNum += 1
         }
     }
+    
+    
+    
     var body: some View {
         NavigationStack{ ///Required to add button in toolbar
             List{
@@ -42,23 +49,23 @@ struct listWithButton: View {
                     Text("jlksfj;laksjf")
                 }
             }
+            
             .toolbar{
-                if (num.count < 10) {
+                ToolbarItem(placement: .topBarLeading) {
+                    if (num.count != 0){
+                        EditButton()
+                    }
+                    
+                }
+                ToolbarItem(placement: .bottomBar) {
                     Button("Add Number"){
-                        
-                        //                num.append(nextNum)
-                        //                nextNum += 1
-                        ///OR
                         addNum()
                     }
+                    //Unable to add multi items use toolbar item group
+                    
                 }
             }
             
-            .toolbar{
-                if (num.count != 0){
-                    EditButton()
-                }
-            }
             ///Can place toolbar button at any place left or bottom and default is on right top side
             .navigationTitle("Numbers")
             

@@ -39,12 +39,14 @@ struct list: View {
                             
                         }
                     }
+                    
                 }
                 
                 Section ("Categories") {
                     ForEach(cate, id: \.self) {
                         Text("likes : \($0)") ///can go with this also
                         ///$0: Used for accessing only 1 element
+                            .listRowSeparator(.hidden)
                     }
                 }
                 Text("this is without loop")
