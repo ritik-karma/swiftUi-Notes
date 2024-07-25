@@ -36,7 +36,6 @@ struct listWithButton: View {
                             showModule = true
                         }
                 }
-                
                 .onDelete(perform: { indexSet in
                     
                    // num.remove(atOffsets: indexSet)
@@ -62,10 +61,8 @@ struct listWithButton: View {
                         addNum()
                     }
                     //Unable to add multi items use toolbar item group
-                    
                 }
             }
-            
             ///Can place toolbar button at any place left or bottom and default is on right top side
             .navigationTitle("Numbers")
             
