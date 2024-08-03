@@ -44,6 +44,7 @@ struct list: View {
                 
                 Section ("Categories") {
                     ForEach(cate, id: \.self) {
+                        //if you use stack in here then shorthand argument'$' will not be applicable
                         Text("likes : \($0)") ///can go with this also
                         ///$0: Used for accessing only 1 element
                             .listRowSeparator(.hidden)

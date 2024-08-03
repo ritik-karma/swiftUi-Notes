@@ -13,6 +13,7 @@ struct listWithButton: View {
     @State var num: [Int] = []
     @State var nextNum = 1
     @State var showModule = false
+    
 
     
     func removeRow(offsets: IndexSet){
@@ -24,8 +25,7 @@ struct listWithButton: View {
             nextNum += 1
         }
     }
-    
-    
+
     
     var body: some View {
         NavigationStack{ ///Required to add button in toolbar
@@ -48,7 +48,7 @@ struct listWithButton: View {
                     Text("jlksfj;laksjf")
                 }
             }
-            
+
             .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     if (num.count != 0){

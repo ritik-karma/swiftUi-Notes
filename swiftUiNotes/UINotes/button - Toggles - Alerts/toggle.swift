@@ -12,7 +12,8 @@ struct toggle: View {
     
     var body: some View {
         VStack{
-            
+            Image(systemName: isOn ? "wifi" : "wifi.slash")
+                .font(.largeTitle)
             Image(systemName: "lightbulb")
                 .symbolVariant(isOn ? .fill : .none)
                 .font(.largeTitle)
@@ -32,16 +33,16 @@ struct toggle: View {
             
             
 //MARK: toggle in button
-//            Button {
-//                isOn.toggle()
-//            } label: {
-//                Text("Switch")
-//                .foregroundStyle(.white)
-//                .frame(width: 80, height: 80)
-//                .background(.gray)
-//                .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
-//                .padding()
-//            }
+            Button {
+                isOn.toggle()
+            } label: {
+                Text("Switch")
+                .foregroundStyle(.white)
+                .frame(width: 80, height: 80)
+                .background(.gray)
+                .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
+                .padding()
+            }
             
 
             

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F80626482BFD90C4002630FD /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80626472BFD90C4002630FD /* Alerts.swift */; };
 		F80626692BFDA0B9002630FD /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80626682BFDA0B9002630FD /* cardView.swift */; };
+		F81DAD1E2C5E448700E42446 /* listWithSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DAD1D2C5E448700E42446 /* listWithSearch.swift */; };
 		F827EE242C05A25200674117 /* picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827EE232C05A25200674117 /* picker.swift */; };
 		F82CB3312BFB255500343A0F /* rough.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82CB3302BFB255500343A0F /* rough.swift */; };
 		F83EBDE02C0ADEF200AE297B /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83EBDDF2C0ADEF200AE297B /* Overlay.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		F80626472BFD90C4002630FD /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		F80626682BFDA0B9002630FD /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		F81DAD1D2C5E448700E42446 /* listWithSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listWithSearch.swift; sourceTree = "<group>"; };
 		F827EE232C05A25200674117 /* picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picker.swift; sourceTree = "<group>"; };
 		F82CB3302BFB255500343A0F /* rough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rough.swift; sourceTree = "<group>"; };
 		F83EBDDF2C0ADEF200AE297B /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				F859E7832BC568D900635C19 /* list.swift */,
 				F86546242BD67351006B7C88 /* listWithButton.swift */,
 				F86546222BD6726B006B7C88 /* form.swift */,
+				F81DAD1D2C5E448700E42446 /* listWithSearch.swift */,
 			);
 			path = "list & Form";
 			sourceTree = "<group>";
@@ -292,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F89FE0462BC2D832007FCC5C /* Build configuration list for PBXProject "swiftUiNotes" */;
+			buildConfigurationList = F89FE0462BC2D832007FCC5C /* Build configuration list for PBXProject "swiftUi-Notes" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -354,6 +357,7 @@
 				F859E7792BC566F900635C19 /* State_Binding.swift in Sources */,
 				F859E7962BC56AE100635C19 /* messengerLogin.swift in Sources */,
 				F80626482BFD90C4002630FD /* Alerts.swift in Sources */,
+				F81DAD1E2C5E448700E42446 /* listWithSearch.swift in Sources */,
 				F859E78D2BC5697800635C19 /* scroll(H).swift in Sources */,
 				F859E77B2BC5672B00635C19 /* viewExtraction.swift in Sources */,
 				F8521D802BF3C86400304E50 /* MVVM.swift in Sources */,
@@ -549,7 +553,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F89FE0462BC2D832007FCC5C /* Build configuration list for PBXProject "swiftUiNotes" */ = {
+		F89FE0462BC2D832007FCC5C /* Build configuration list for PBXProject "swiftUi-Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F89FE0572BC2D834007FCC5C /* Debug */,
