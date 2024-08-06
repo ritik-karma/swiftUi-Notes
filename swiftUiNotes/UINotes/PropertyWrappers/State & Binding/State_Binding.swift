@@ -19,9 +19,9 @@
 
 /// "$" $ Sign: When you put $ in front of @State, like $showModal, you're saying, "Hey SwiftUI, create a connection to this data." It's like setting up a wire between your UI and the stored data.
 
-//MARK: Binding
+//MARK: Binding (Refrence type)
 ///* @Binding creates a link to a @State property. We cannot create @Binding without @State. @State property is the origin. Modifying @Binding modifies original @State
-///Mostly Binding is used to make use of @State in diffrent views
+/// Binding is used to make changes in @state
 /// Passing data between 2 views with @binding
 
 ///Because structs are immutable so we can't change the value . here @State comes in help
@@ -47,7 +47,7 @@ struct State_Binding: View {
                     .font(.title)
                     .padding()
                     Text("Number = \(num)")
-                    footerView(value: $num)
+                    footerView(bindingNum: $num)
                 }
                 .background(.white)
                 .padding()
@@ -81,10 +81,12 @@ struct State_Binding: View {
 
 
 struct footerView: View {
-    @Binding var value: Int
+    @Binding var bindingNum: Int
+    ///Binding with num while implementing, so changing this can change num also
+    ///There should be return value as binding while using footerView(bindingNum: $_____)
     var body: some View {
         Button("End"){
-            value = 0
+            bindingNum = 0
         }
     }
 }

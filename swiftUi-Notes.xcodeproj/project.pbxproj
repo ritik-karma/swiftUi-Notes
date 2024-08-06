@@ -45,6 +45,7 @@
 		F89FE0532BC2D834007FCC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89FE0522BC2D834007FCC5C /* Assets.xcassets */; };
 		F89FE0562BC2D834007FCC5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89FE0552BC2D834007FCC5C /* Preview Assets.xcassets */; };
 		F8C00D572BD6381300BDF5F1 /* sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C00D562BD6381300BDF5F1 /* sheet.swift */; };
+		F8C0BA8C2C5F46FD00413868 /* stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0BA8B2C5F46FD00413868 /* stepper.swift */; };
 		F8D3FD422BF38EB000D2EBAB /* ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D3FD412BF38EB000D2EBAB /* ex.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		F89FE0522BC2D834007FCC5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F89FE0552BC2D834007FCC5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8C00D562BD6381300BDF5F1 /* sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheet.swift; sourceTree = "<group>"; };
+		F8C0BA8B2C5F46FD00413868 /* stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepper.swift; sourceTree = "<group>"; };
 		F8D3FD412BF38EB000D2EBAB /* ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,11 +134,14 @@
 			children = (
 				F859E78B2BC5696500635C19 /* scroll */,
 				F859E7862BC568FC00635C19 /* grids */,
-				F859E77E2BC567AF00635C19 /* button - Toggles - Alerts */,
 				F859E7772BC566DF00635C19 /* PropertyWrappers */,
-				F86546212BD671D8006B7C88 /* list & Form */,
+				F86546212BD671D8006B7C88 /* list  */,
 				F859E77A2BC5672B00635C19 /* viewExtraction.swift */,
+				F80626472BFD90C4002630FD /* Alerts.swift */,
+				F80626462BFD909E002630FD /* Button */,
+				F891AE712BF75FEE003F9B23 /* toggle.swift */,
 				F847F9682C27EBBB00BC31F2 /* splitScreen.swift */,
+				F86546222BD6726B006B7C88 /* form.swift */,
 				F827EE232C05A25200674117 /* picker.swift */,
 				F859E7902BC56A9100635C19 /* loop.swift */,
 				F8C00D562BD6381300BDF5F1 /* sheet.swift */,
@@ -148,6 +153,7 @@
 				F859E79F2BC56C0E00635C19 /* text.swift */,
 				F859E79B2BC56BC600635C19 /* imageAndSafearea.swift */,
 				F859E79D2BC56BF200635C19 /* shapes.swift */,
+				F8C0BA8B2C5F46FD00413868 /* stepper.swift */,
 			);
 			path = UINotes;
 			sourceTree = "<group>";
@@ -160,16 +166,6 @@
 				F89E0DD52BF330A200251BC6 /* stateObject_ObservedObject.swift */,
 			);
 			path = PropertyWrappers;
-			sourceTree = "<group>";
-		};
-		F859E77E2BC567AF00635C19 /* button - Toggles - Alerts */ = {
-			isa = PBXGroup;
-			children = (
-				F80626462BFD909E002630FD /* Button */,
-				F891AE712BF75FEE003F9B23 /* toggle.swift */,
-				F80626472BFD90C4002630FD /* Alerts.swift */,
-			);
-			path = "button - Toggles - Alerts";
 			sourceTree = "<group>";
 		};
 		F859E7862BC568FC00635C19 /* grids */ = {
@@ -201,15 +197,14 @@
 			path = Exercise;
 			sourceTree = "<group>";
 		};
-		F86546212BD671D8006B7C88 /* list & Form */ = {
+		F86546212BD671D8006B7C88 /* list  */ = {
 			isa = PBXGroup;
 			children = (
 				F859E7832BC568D900635C19 /* list.swift */,
 				F86546242BD67351006B7C88 /* listWithButton.swift */,
-				F86546222BD6726B006B7C88 /* form.swift */,
 				F81DAD1D2C5E448700E42446 /* listWithSearch.swift */,
 			);
-			path = "list & Form";
+			path = "list ";
 			sourceTree = "<group>";
 		};
 		F89FE0422BC2D832007FCC5C = {
@@ -357,6 +352,7 @@
 				F859E7792BC566F900635C19 /* State_Binding.swift in Sources */,
 				F859E7962BC56AE100635C19 /* messengerLogin.swift in Sources */,
 				F80626482BFD90C4002630FD /* Alerts.swift in Sources */,
+				F8C0BA8C2C5F46FD00413868 /* stepper.swift in Sources */,
 				F81DAD1E2C5E448700E42446 /* listWithSearch.swift in Sources */,
 				F859E78D2BC5697800635C19 /* scroll(H).swift in Sources */,
 				F859E77B2BC5672B00635C19 /* viewExtraction.swift in Sources */,
