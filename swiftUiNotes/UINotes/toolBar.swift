@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct listWithButton: View {
+struct toolbar: View {
     
     
     @State var num: [Int] = []
     @State var nextNum = 1
     @State var showModule = false
+    @State var isOk = false
     
 
     
@@ -48,7 +49,7 @@ struct listWithButton: View {
                     Text("jlksfj;laksjf")
                 }
             }
-
+//MARK: Multi toolbar approach
             .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     if (num.count != 0){
@@ -63,6 +64,7 @@ struct listWithButton: View {
                     //Unable to add multi items use toolbar item group
                 }
             }
+            
             ///Can place toolbar button at any place left or bottom and default is on right top side
             .navigationTitle("Numbers")
             
@@ -70,6 +72,16 @@ struct listWithButton: View {
     }
 }
 
+
+//MARK: single toolbar approch
+/*
+ .toolbar{
+     Toggle(isOn: $isOK) {
+         Label("Find", systemImage: "magnifyingglass")
+     }
+ }
+ */
+
 #Preview {
-    listWithButton()
+    toolbar()
 }

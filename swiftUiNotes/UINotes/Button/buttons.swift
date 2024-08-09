@@ -27,18 +27,19 @@ struct myButton: View {
             Divider()
             
             
-               ///Type1
-            Button("Default Button") {
+               //MARK: Type1
+            Button("Default Button with in built styles") {
                 ///Don't write any view related code in action (only swift code)
                 rectangleColour = .pink
                 name = "ritik"
                 print("clicked")
                 
             }
+            .buttonStyle(BorderedProminentButtonStyle())
             .padding()
             
             
-            ///Type2
+            //MARK: Type2
             Button(action: {
                 rectangleColour = .purple
                 name = "Ayush"
